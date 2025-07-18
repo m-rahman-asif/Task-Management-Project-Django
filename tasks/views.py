@@ -7,3 +7,6 @@ def home(request):
 
 def showTasks(request):
     return HttpResponse("These are  the tasks: ")
+
+def showSpecificTask(request, id):
+    return HttpResponse(f"This is specific task page {id}")
