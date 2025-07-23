@@ -1,6 +1,7 @@
 from django.urls import path
 from tasks.views import *
 urlpatterns = [
-    path('show-tasks', showTasks),
-    path('show-task/<int:id>', showSpecificTask)
+    path('manager-dashboard/', manager_dashboard),
+    path('user-dashboard/', user_dashboard),
+   
 ]
